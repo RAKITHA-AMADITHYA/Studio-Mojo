@@ -220,7 +220,7 @@ const Home = () => {
    <section style={{ background: '#0070C0' }}>
 <Grid container p={2}>
   <Grid item xs={6} sm={6} md={6} lg={6} xl={6} >
-    <img src={logo} width={'40%'} alt="" />
+    <img src={logo} width={'30%'} alt="" />
   </Grid>
 
   <Grid item xs={6} sm={6} md={6} lg={6} xl={6} display={'flex'} justifyContent={'end'} alignItems={'end'} flexDirection={'column'}>
