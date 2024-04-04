@@ -47,7 +47,7 @@ function Header() {
               fontWeight={600}
               color={'#000000'}
               component={Link}
-              to="/features"
+              to="/pricing"
               sx={{
                 '&:hover': {
                   color: '#0070C0',
@@ -64,7 +64,7 @@ function Header() {
               fontWeight={600}
               color={'#000000'}
               component={Link}
-              to="/features"
+              to="/resources"
               sx={{
                 '&:hover': {
                   color: '#0070C0',
@@ -81,7 +81,7 @@ function Header() {
               fontWeight={600}
               color={'#000000'}
               component={Link}
-              to="/features"
+              to="/about"
               sx={{
                 '&:hover': {
                   color: '#0070C0',
