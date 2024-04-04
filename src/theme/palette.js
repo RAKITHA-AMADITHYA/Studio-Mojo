@@ -9,7 +9,7 @@ function createGradient(color1, color2) {
 export const MODAL_COLORS = {
   paper: "#F5F5F5",
   black: "#000000",
-  white: "#FFFFFF",
+  white: "#eeeeee",
   primary: "#CE3D3D",
 };
 
