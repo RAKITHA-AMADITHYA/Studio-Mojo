@@ -10,6 +10,10 @@ const Features = lazy(() => import("./pages/Features"));
 const Pricing = lazy(() => import("./pages/Pricing"));
 const Resources = lazy(() => import("./pages/Resources"));
 const About = lazy(() => import("./pages/AboutUs"));
+const Login = lazy(() => import("./pages/Login"));
+const Signup = lazy(() => import("./pages/Signup"));
+
+
 
 
 
@@ -40,6 +44,10 @@ function App() {
               <Route path="pricing" element={<Pricing />} />
               <Route path="resources" element={<Resources />} />
               <Route path="about" element={<About />} />
+              <Route path="login" element={<Login />} />
+              <Route path="signup" element={<Signup />} />
+
+
 
 
 
