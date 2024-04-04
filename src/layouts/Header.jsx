@@ -37,6 +37,7 @@ function Header() {
                   cursor: 'pointer',
                   textDecoration: 'none', // Remove text decoration
                 },
+                textDecoration: 'none', // Remove text decoration
               }}
             >
               Features
@@ -46,13 +47,14 @@ function Header() {
               fontWeight={600}
               color={'#000000'}
               component={Link}
-              to="/pricing"
+              to="/features"
               sx={{
                 '&:hover': {
                   color: '#0070C0',
                   cursor: 'pointer',
                   textDecoration: 'none', // Remove text decoration
                 },
+                textDecoration: 'none', // Remove text decoration
               }}
             >
               Pricing
@@ -62,13 +64,14 @@ function Header() {
               fontWeight={600}
               color={'#000000'}
               component={Link}
-              to="/resources"
+              to="/features"
               sx={{
                 '&:hover': {
                   color: '#0070C0',
                   cursor: 'pointer',
                   textDecoration: 'none', // Remove text decoration
                 },
+                textDecoration: 'none', // Remove text decoration
               }}
             >
               Resources
@@ -78,13 +81,14 @@ function Header() {
               fontWeight={600}
               color={'#000000'}
               component={Link}
-              to="/about"
+              to="/features"
               sx={{
                 '&:hover': {
                   color: '#0070C0',
                   cursor: 'pointer',
-                  textDecoration: 'none', 
+                  textDecoration: 'none', // Remove text decoration
                 },
+                textDecoration: 'none', // Remove text decoration
               }}
             >
               About Us
@@ -96,7 +100,16 @@ function Header() {
         <Grid item display={{ xs: 'none', sm: 'none', md: 'flex', lg: 'flex' }} md={2} lg={2} xl={2} justifyContent={'center'} p={1}>
           <Stack direction="row" spacing={2} alignItems="center">
             <Button component={Link} to="/login">Login</Button>
-            <Button variant="contained" component={Link} to="/signup">Signup</Button>
+            <Button
+              variant="contained"
+              component={Link}
+              to="/signup"
+              sx={{
+                '&:hover': {
+                  backgroundColor: '#0070C0', // Change background color on hover
+                },
+              }}
+            >Signup</Button>
           </Stack>
         </Grid>
       </Grid>

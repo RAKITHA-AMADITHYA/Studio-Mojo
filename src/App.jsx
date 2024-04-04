@@ -29,7 +29,7 @@ function App() {
         <Suspense
           fallback={
             <div style={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-              <BarLoader color={"#C64444"} loading={true} width={"100%"} />
+              <BarLoader color={"#0070C0"} loading={true} width={"100%"} />
             </div>
           }
         >

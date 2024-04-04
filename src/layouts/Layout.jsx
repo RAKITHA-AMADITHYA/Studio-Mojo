@@ -16,10 +16,10 @@ function Layout() {
   return (
     <Box sx={{ display: 'flex', flexDirection: 'column', height: '100vh' }}>
       <Header />
-      <Box sx={{ display: 'flex', flexGrow: 1, overflow: 'hidden',backgroundColor:'#eeeeee' }}>
+      {/* <Box sx={{ display: 'flex', flexGrow: 1, overflow: 'hidden',backgroundColor:'#eeeeee' }}> */}
         <Outlet/>
         
-      </Box>
+      {/* </Box> */}
     </Box>
   );
 }

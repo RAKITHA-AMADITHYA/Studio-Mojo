@@ -6,5 +6,18 @@
 
 
 
+::-webkit-scrollbar {
+    width: 5px;
+  }
+  
 
+  ::-webkit-scrollbar-track {
+    background: #eeeeee; 
+  }
+  
+  /* Apply styles to the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    background-color: #0070C0; 
+    border-radius: 3px; 
+  }
 
