@@ -126,7 +126,15 @@ function Header() {
               </Grid>
 
               <Grid item display={'flex'} justifyContent={'cente'} alignItems={'center'} mt={40}>
-                <Button variant="contained" disableElevation fullWidth>
+                <Button
+                  component={Link}
+                  to="/login"
+                  sx={{
+                    textDecoration: 'none',
+                    color: 'inherit',
+                    bgcolor:'#0070C0'
+                  }}
+                >
                   Login
                 </Button>
               </Grid>
