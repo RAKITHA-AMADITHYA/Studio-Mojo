@@ -1,10 +1,16 @@
-import React from 'react';
-import { Box, Grid, Badge, Stack, Button, Typography } from "@mui/material";
+import React, { useState } from 'react';
+import { Box, Grid, Badge, Stack, Button, Typography, Drawer } from "@mui/material";
 import { Link } from 'react-router-dom';
-import Logo from '../assets/logo.png';
 import MenuIcon from '@mui/icons-material/Menu';
+import Logo from '../assets/logo.png';
 
 function Header() {
+  const [open, setOpen] = useState(false);
+
+  const handleToggle = () => {
+    setOpen(!open);
+  };
+
   return (
     <Box
       sx={{
@@ -18,8 +24,115 @@ function Header() {
         </Grid>
         <Grid item xs={1} sm={1} md={1} display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none', xl: 'none' }} justifyContent={'center'} alignItems={'center'}>
           <Badge color="primary">
-            <MenuIcon color="action" />
+            <MenuIcon color="action" onClick={handleToggle} />
           </Badge>
+          <Drawer
+            anchor="right"
+            open={open}
+            onClose={handleToggle}
+          >
+            <Box sx={{ p: 2, width: 200 }}>
+
+              <Grid item>
+                <img src={Logo} alt="" />
+              </Grid>
+              <Grid item display={'flex'} justifyContent={'cente'} alignItems={'center'} mt={10}>
+                <Typography
+                  variant='h6'
+                  fontWeight={600}
+                  color={'#000000'}
+                  component={Link}
+                  to="/features"
+                  sx={{
+                    '&:hover': {
+                      color: '#0070C0',
+                      cursor: 'pointer',
+                      textDecoration: 'none', // Remove text decoration
+                    },
+                    textDecoration: 'none', // Remove text decoration
+                    display: 'block',
+                    width: '100%',
+                  }}
+                >
+                  Features
+                </Typography>
+              </Grid>
+
+              <Grid item display={'flex'} justifyContent={'cente'} alignItems={'center'} mt={1}>
+                <Typography
+                  variant='h6'
+                  fontWeight={600}
+                  color={'#000000'}
+                  component={Link}
+                  to="/pricing"
+                  sx={{
+                    '&:hover': {
+                      color: '#0070C0',
+                      cursor: 'pointer',
+                      textDecoration: 'none', // Remove text decoration
+                    },
+                    textDecoration: 'none', // Remove text decoration
+                    display: 'block',
+                    width: '100%',
+                  }}
+                >
+                  Pricing
+                </Typography>
+              </Grid>
+
+
+              <Grid item display={'flex'} justifyContent={'cente'} alignItems={'center'} mt={1}>
+                <Typography
+                  variant='h6'
+                  fontWeight={600}
+                  color={'#000000'}
+                  component={Link}
+                  to="/resources"
+                  sx={{
+                    '&:hover': {
+                      color: '#0070C0',
+                      cursor: 'pointer',
+                      textDecoration: 'none', // Remove text decoration
+                    },
+                    textDecoration: 'none', // Remove text decoration
+                    display: 'block',
+                    width: '100%',
+                  }}
+                >
+                  Resources
+                </Typography>
+              </Grid>
+
+              <Grid item display={'flex'} justifyContent={'cente'} alignItems={'center'} mt={1}>
+                <Typography
+                  variant='h6'
+                  fontWeight={600}
+                  color={'#000000'}
+                  component={Link}
+                  to="/about"
+                  sx={{
+                    '&:hover': {
+                      color: '#0070C0',
+                      cursor: 'pointer',
+                      textDecoration: 'none', // Remove text decoration
+                    },
+                    textDecoration: 'none', // Remove text decoration
+                    display: 'block',
+                    width: '100%',
+                  }}
+                >
+                  About Us
+                </Typography>
+              </Grid>
+
+              <Grid item display={'flex'} justifyContent={'cente'} alignItems={'center'} mt={40}>
+                <Button variant="contained" disableElevation fullWidth>
+                  Login
+                </Button>
+              </Grid>
+
+            </Box>
+          </Drawer>
         </Grid>
 
         {/* Nav Links */}
