@@ -40,7 +40,7 @@ const Login = () => {
                         </Grid>
                         <Button variant="contained" sx={{ mt: 2, '&:hover': { backgroundColor: 'primary.main' } }}>Login</Button>
                         <Typography variant="subtitle1" color="primary" sx={{mt:2}}>
-                                    <Link to="/register" style={{  textDecoration: 'none',color:'inherit' }}>Don’t have an account? Register here</Link>
+                                    <Link to="/signup" style={{  textDecoration: 'none',color:'inherit' }}>Don’t have an account? Register here</Link>
                                 </Typography>
                     </Grid>
                     </Box>
