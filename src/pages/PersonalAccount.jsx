@@ -21,7 +21,7 @@ const PersonalAccount = () => {
     });
 
     return (
-        <div style={{ padding: 20 }}>
+        <div style={{ padding: 10 }}>
             <ContainerForm>
                 <Typography sx={{ mt: 3, color: "#616161" }} variant='h6'>Create Personal Account</Typography>
                 <Divider sx={{ my: 2 }} />
