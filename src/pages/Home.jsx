@@ -1,6 +1,10 @@
 import { Box, Button, Divider, Grid, IconButton, Typography, useMediaQuery } from '@mui/material'
 import anime from '../assets/anime1.png'
-import circle from '../assets/messege.png'
+import messegeIcon from '../assets/messege.png'
+import missedCallIcon from '../assets/missedcall.png'
+import robotIcon from '../assets/robot.png'
+
+
 import Feature from '../assets/feature.gif'
 import logo from '../assets/logo.png'
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -86,7 +90,7 @@ const Home = () => {
             flexDirection="column"
             p
           >
-            <img src={circle} width={'20%'} alt="" />
+            <img src={missedCallIcon} width={'20%'} alt="" />
             <Typography variant="h5">Missed Call lead generation</Typography>
             <Grid item p={2}>
               <Typography  variant="p">You can send a simple SMS message to multiple contact groups at the same
@@ -107,7 +111,7 @@ const Home = () => {
             alignItems="center"
             flexDirection="column"
           >
-            <img src={circle} width={'20%'} alt="" />
+            <img src={messegeIcon} width={'20%'} alt="" />
             <Typography variant="h5">SMS Campaigns to Contact Lists</Typography>
             <Grid item p={2}>
             <Typography variant="p">You can send a simple SMS message to multiple contact groups at the same
@@ -125,7 +129,7 @@ const Home = () => {
             alignItems="center"
             flexDirection="column"
           >
-            <img src={circle} width={'20%'} alt="" />
+            <img src={robotIcon} width={'20%'} alt="" />
             <Typography variant="h5">Bots with automated
               interactivity</Typography>
               <Grid item p={2}>
@@ -144,7 +148,7 @@ const Home = () => {
             alignItems="center"
             flexDirection="column"
           >
-            <img src={circle} width={'20%'} alt="" />
+            <img src={messegeIcon} width={'20%'} alt="" />
             <Typography variant="h5">Criteria system for campaigns</Typography>
             <Grid item p={2}>
             <Typography variant="p">You can send a simple SMS message to multiple contact groups at the same
@@ -217,7 +221,7 @@ const Home = () => {
   </section>
 
    {/* footer */}
-   <section style={{ background: '#0070C0', borderTopLeftRadius:25,borderTopRightRadius:25}}>
+   <section style={{ background: '#0070C0'}}>
 <Grid container p={2}>
   <Grid item xs={6} sm={6} md={6} lg={6} xl={6} >
     <img src={logo} width={'30%'} alt="" />
@@ -228,7 +232,7 @@ const Home = () => {
   <Typography variant='p' color={'white'} fontWeight={400}>(+94) 70 000 0000</Typography>
 
 
-  <Typography variant='subtitle1' color={'white'} fontWeight={600} mt={5}>Email</Typography>
+  <Typography variant='subtitle1' color={'white'} fontWeight={600} >Email</Typography>
   <Typography variant='subtitle1' color={'white'} fontWeight={400}>support@studiomojo.lk</Typography>
 </Grid>
 
