@@ -1,4 +1,4 @@
-import { Button, Divider, Grid, IconButton, Typography, useMediaQuery } from '@mui/material'
+import { Box, Button, Divider, Grid, IconButton, Typography, useMediaQuery } from '@mui/material'
 import anime from '../assets/anime1.png'
 import circle from '../assets/messege.png'
 import Feature from '../assets/feature.gif'
@@ -217,7 +217,7 @@ const Home = () => {
   </section>
 
    {/* footer */}
-   <section style={{ background: '#0070C0' }}>
+   <section style={{ background: '#0070C0', borderTopLeftRadius:25,borderTopRightRadius:25}}>
 <Grid container p={2}>
   <Grid item xs={6} sm={6} md={6} lg={6} xl={6} >
     <img src={logo} width={'30%'} alt="" />
@@ -234,22 +234,12 @@ const Home = () => {
 
 </Grid>
 <Divider sx={{ my: 2 }} />
-<Grid item display={'flex'} justifyContent={'center'} alignItems={'center'}>
-
-
-<IconButton aria-label="fingerprint" color="white" >
-  <GitHubIcon />
-</IconButton>
-
-
-<IconButton aria-label="fingerprint" color="white"  sx={{fontSize:'1rem'}}>
-  <GitHubIcon />
-</IconButton>
-
-<IconButton aria-label="fingerprint" sx={{ fontSize: 36 }} color="white">
-  <GitHubIcon />
-</IconButton>
+<Grid item display={'flex'} justifyContent={'center'} alignItems={'center'} spacing={2}>
+  <Typography variant='p' color={'white'} fontWeight={600}>Terms & Conditions</Typography>
+  <Box mx={2} />
+  <Typography variant='p' color={'white'} fontWeight={600}>Privacy Policy</Typography>
 </Grid>
+
    </section>
   
     </>
