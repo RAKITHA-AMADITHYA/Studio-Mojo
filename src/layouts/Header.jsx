@@ -19,8 +19,11 @@ function Header() {
     >
       <Grid container p={1}>
         {/* Logo */}
-        <Grid item xs={11} sm={11} md={2} lg={2} xl={10} display={'flex'} justifyContent={'start'} alignItems={'center'}>
-          <img src={Logo} width={'200px'} alt="" />
+        <Grid item xs={11} sm={11} md={2} lg={2} xl={2} display={'flex'} justifyContent={'start'} alignItems={'center'}>
+
+          <Link to="/">
+            <img src={Logo} width={'200px'} alt="" />
+          </Link>
         </Grid>
         <Grid item xs={1} sm={1} md={1} display={{ xs: 'flex', sm: 'flex', md: 'none', lg: 'none', xl: 'none' }} justifyContent={'center'} alignItems={'center'}>
           <Badge color="primary">
@@ -132,7 +135,7 @@ function Header() {
                   sx={{
                     textDecoration: 'none',
                     color: 'inherit',
-                    bgcolor:'#0070C0'
+                    bgcolor: '#0070C0'
                   }}
                 >
                   Login
