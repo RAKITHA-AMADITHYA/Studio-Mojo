@@ -4,8 +4,9 @@ import messegeIcon from '../assets/messege.png'
 import missedCallIcon from '../assets/missedcall.png'
 import robotIcon from '../assets/robot.png'
 import noteIcon from '../assets/note.png'
-
-
+import FacebookIcon from '@mui/icons-material/Facebook';
+import YouTubeIcon from '@mui/icons-material/YouTube';
+import InstagramIcon from '@mui/icons-material/Instagram';
 
 import Feature from '../assets/feature.gif'
 import logo from '../assets/logo.png'
@@ -79,17 +80,17 @@ const Home = () => {
             </Typography>
 
             <Link to="/signup">
-            <Button
-              sx={{
-                mt: 2, // Add margin-top
-                fontSize: '1rem', // Increase font size
-                padding: '10px 20px', // Increase padding
-              }}
-              variant="outlined"
-              href="#outlined-buttons"
-            >
-              Get Started
-            </Button>
+              <Button
+                sx={{
+                  mt: 2, // Add margin-top
+                  fontSize: '1rem', // Increase font size
+                  padding: '10px 20px', // Increase padding
+                }}
+                variant="outlined"
+                href="#outlined-buttons"
+              >
+                Get Started
+              </Button>
             </Link>
           </Grid>
         </Grid>
@@ -143,7 +144,7 @@ const Home = () => {
 
 
           </Grid>
-         
+
           <Grid
             item
             xs={12}
@@ -163,7 +164,7 @@ const Home = () => {
               <Typography variant="p">You can send a simple SMS message to multiple contact groups at the same
                 time in one single campaign.</Typography></Grid>
           </Grid>
-        
+
           <Grid
             item
             xs={12}
@@ -185,22 +186,22 @@ const Home = () => {
 
         </Grid>
         <Grid item p={2} display={'flex'} justifyContent={'center'} >
-        <Link to="/features">
-          <Button
-            sx={{
-              mt: 2, // Add margin-top
-              fontSize: '1rem', // Increase font size
-              padding: '10px 20px',
-              '&:hover': {
-                backgroundColor: '#0070C0', // Change background color on hover
-              }, // Increase padding
-            }}
-            variant="contained"
-            href="#outlined-buttons"
+          <Link to="/features">
+            <Button
+              sx={{
+                mt: 2, // Add margin-top
+                fontSize: '1rem', // Increase font size
+                padding: '10px 20px',
+                '&:hover': {
+                  backgroundColor: '#0070C0', // Change background color on hover
+                }, // Increase padding
+              }}
+              variant="contained"
+              href="#outlined-buttons"
 
-          >
-            Explore More
-          </Button>
+            >
+              Explore More
+            </Button>
           </Link>
         </Grid>
       </section>
@@ -258,21 +259,40 @@ const Home = () => {
           </Grid>
 
           <Grid item xs={6} sm={6} md={6} lg={6} xl={6} display={'flex'} justifyContent={'end'} alignItems={'end'} flexDirection={'column'}>
-            <Typography variant='p' color={'white'} fontWeight={600}>Contact</Typography>
-            <Typography variant='p' color={'white'} fontWeight={400}>(+94) 70 000 0000</Typography>
+            <Typography variant='p' color={'white'} fontWeight={400}>Contact</Typography>
+            <Typography variant='p' color={'white'} fontWeight={600}>(+94) 70 000 0000</Typography>
 
 
-            <Typography variant='subtitle1' color={'white'} fontWeight={600} >Email</Typography>
-            <Typography variant='subtitle1' color={'white'} fontWeight={400}>support@studiomojo.lk</Typography>
+            <Typography variant='subtitle1' color={'white'} fontWeight={400} >Email</Typography>
+            <Typography variant='subtitle1' color={'white'} fontWeight={600}>support@studiomojo.lk</Typography>
           </Grid>
 
         </Grid>
         <Divider sx={{ my: 2 }} />
-        <Grid item display={'flex'} justifyContent={'center'} alignItems={'center'} spacing={2}>
-          <Typography variant='p' color={'white'} fontWeight={600}>Terms & Conditions</Typography>
-          <Box mx={2} />
-          <Typography variant='p' color={'white'} fontWeight={600}>Privacy Policy</Typography>
+        <Grid item display={'flex'} justifyContent={'start'} alignItems={'start'} spacing={2} p={1}>
+          <Typography variant='p' color={'white'} fontWeight={400}>© 2023 StudioMojo</Typography>
+
         </Grid>
+
+        <Grid item display={'flex'} justifyContent={'center'} alignItems={'center'} spacing={2}>
+          <Typography variant='p' color={'white'} fontWeight={500}>Terms & Conditions</Typography>
+          <Box mx={2} />
+          <Typography variant='p' color={'white'} fontWeight={500}>Privacy Policy</Typography>
+        </Grid>
+
+        <Grid container justify="space-between" alignItems="end" justifyContent={'end'} spacing={5}>
+  <Grid item>
+    <FacebookIcon style={{ color: 'white' }} />
+  </Grid>
+  <Grid item>
+    <YouTubeIcon style={{ color: 'white' }} />
+  </Grid>
+  <Grid item>
+    <InstagramIcon style={{ color: 'white' }} />
+  </Grid>
+</Grid>
+
+
 
       </section>
 
