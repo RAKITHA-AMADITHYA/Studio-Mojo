@@ -1,9 +1,12 @@
 import React from 'react'
+import { Box, Grid } from '@mui/material'
 
 const Resources = () => {
   return (
-    <div>
-      <h1 color='#0070C0'>I m Resources page</h1>
+    <div style={{display:'flex', justifyContent:'center' , alignItems:'center'}}>
+      <Grid >
+        <Box mt={15} sx={{borderRadius:4, bgcolor:'white'}}> <h1>I m Resources</h1></Box>
+        </Grid>
     </div>
   )
 }
