@@ -1,10 +1,14 @@
 import React from 'react'
+import { Box, Grid } from '@mui/material'
+
 
 const AboutUs = () => {
   return (
-    <div>
-<h1>I m About Us Page</h1> 
-   </div>
+    <div style={{display:'flex', justifyContent:'center' , alignItems:'center'}}>
+      <Grid >
+        <Box mt={15} sx={{borderRadius:4, bgcolor:'white'}}> <h1>I m About Us</h1></Box>
+        </Grid>
+    </div>
   )
 }
 
