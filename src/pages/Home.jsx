@@ -7,48 +7,32 @@ import noteIcon from '../assets/note.png'
 import FacebookIcon from '@mui/icons-material/Facebook';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
+import { motion } from "framer-motion"
 import Feature from '../assets/feature.gif'
 import logo from '../assets/logo.png'
 import { useGSAP } from '@gsap/react'
 import gsap from "gsap";
 import { Link } from 'react-router-dom'
-
+import Card from '../components/ContentCard/Card'
 
 const Home = () => {
-  useGSAP(() => {
-    gsap.to('#text', {
-      ease: 'power1.inOut',
-      opacity: 1,
-      y: 0
-    })
 
-    gsap.fromTo('.para', {
-      opacity: 0,
-      y: 20
-    }, {
-      opacity: 1,
-      y: 0,
-      delay: 1,
-      stagger: 0.1
-    })
-  }, [])
 
   const isXsSm = useMediaQuery(theme => theme.breakpoints.down('sm'));
   const isMd = useMediaQuery(theme => theme.breakpoints.up('md'));
   const isLg = useMediaQuery(theme => theme.breakpoints.up('lg'));
   return (
-    <>
+    <div  >
       {/* Section 1 */}
       <section>
         {/* Text Grid */}
-        <Grid item display={'flex'} justifyContent={'center'} mt={2}>
+        <Grid item display={'flex'} justifyContent={'center'} alignItems={'center'} textAlign={'center'} mt={2} p={1}>
           <Fade in timeout={1000}>
-            <Typography variant='h2'>
-              <span id='text' style={{ fontSize: { xs: '2px', sm: '20px', md: '30px', lg: '30px', xl: '30px' } }}>
+            <Typography variant='h2' sx={{ fontSize: { xs: '30px', sm: '40px', md: '40px', lg: '50px', xl: '80px' }, }}>
+              <span id='text' >
                 Text Your Way to
               </span>{' '}
-              <span id='text' style={{ color: '#0070C0', fontSize: { xs: '20px', sm: '20px', md: '30px', lg: '30px', xl: '30px' } }}>
+              <span id='text' style={{ color: '#0070C0', fontWeight: 800 }} >
                 Success
               </span>
             </Typography>
@@ -56,41 +40,50 @@ const Home = () => {
         </Grid>
 
         <Grid container mt={-2} spacing={2} p={1}>
-          <Grid item xs={12} sm={12} md={6} lg={6} xl={6} display={'flex'} justifyContent={'center'} alignItems={'center'}>
+          <Grid item xs={12} sm={12} md={6} lg={6} xl={6} display={'flex'} justifyContent={'center'} >
+            {/* <motion.div animate={{}}> */}
+
             <img src={anime} width={'75%'} alt="" />
+            {/* </motion.div> */}
           </Grid>
-          <Grid item xs={12} sm={12} md={6} lg={6} xl={6} display={'flex'} justifyContent={'center'} alignItems={'start'} flexDirection={'column'} >
+          <Grid item xs={12} sm={12} md={6} lg={6} xl={6} display={'flex'} justifyContent={'center'} alignItems={'start'} flexDirection={'column'} p={2} >
             <Fade in timeout={2000}>
-              <Typography variant='h2' fontWeight={400}>
-                <span style={{ fontSize: { xs: '20px', sm: '20px', md: '30px', lg: '30px', xl: '30px' } }}>
+              <Typography variant='h2' sx={{ fontSize: { xs: '25px', sm: '30px', md: '30px', lg: '45px', xl: '80px' }, }}>
+                <span >
                   Instantly Notify All Your Customers with a
                 </span>{" "}
                 <span style={{ color: '#000000', fontWeight: 800 }}>
                   Single SMS Click!
                 </span>
               </Typography></Fade>
+            <Grid item mt={2}>
+              <Fade in timeout={3000}>
 
-            <Typography variant='p' > <span style={{ color: '#000000', fontWeight: 800 }}>
-              Studio Mojo
-            </span>
-              <span style={{ fontSize: { xs: '20px', sm: '20px', md: '30px', lg: '30px', xl: '30px' } }}>
-                a user-friendly text messaging platform to extend your customer interactions. Send promotional offers, alerts, reminders and marketing campaigns via SMS and email, all within a matter of seconds!
-              </span>{" "}
+                <Typography variant='subtitle1' sx={{ fontSize: { xs: '12px', sm: '15px', md: '15px', lg: '15px', xl: '30px' } }} > <span style={{ color: '#000000', fontWeight: 800 }}>
+                  Studio Mojo
+                </span>
+                  <span >
+                    a user-friendly text messaging platform to extend your customer interactions. Send promotional offers, alerts, reminders and marketing campaigns via SMS and email, all within a matter of seconds!
+                  </span>{" "}
 
-            </Typography>
+                </Typography>
+              </Fade>
+            </Grid>
 
             <Link to="/signup">
+              <Fade in timeout={4000}>
               <Button
-                sx={{
-                  mt: 2, // Add margin-top
-                  fontSize: '1rem', // Increase font size
-                  padding: '10px 20px', // Increase padding
-                }}
-                variant="outlined"
-                href="#outlined-buttons"
-              >
-                Get Started
-              </Button>
+  sx={{
+    mt: 4, // Add margin-top
+    fontSize: { xs: '1rem', xl: '1.5rem' }, // Set different font sizes for different screen sizes
+    padding: { xs: '10px 20px', xl: '20px 40px' }, // Set different padding for different screen sizes
+  }}
+  variant="outlined"
+  href="#outlined-buttons"
+>
+                  Get Started
+                </Button>
+              </Fade>
             </Link>
           </Grid>
         </Grid>
@@ -99,99 +92,39 @@ const Home = () => {
 
       {/* Section 2 */}
       <section style={{ background: 'var(--P1, rgba(0, 112, 192, 0.06))' }}>
-        <Grid item display={'flex'} justifyContent={'center'} mt={2} p={5}>
-          <Typography variant='h2'>Discover All Your Marketing Needs In One Place</Typography>
+        <Grid item display={'flex'} justifyContent={'center'} mt={2} p={5} alignItems={'center'} textAlign={'center'}>
+          <Typography variant='h2' sx={{ fontSize: { xs: '25px', sm: '30px', md: '33px', lg: '40px', xl: '50px' } }}>Discover All Your Marketing Needs In One Place</Typography>
         </Grid>
+        <Grid container p={2} spacing={2} display={'flex'} justifyContent={'center'} alignItems={'center'} textAlign={'center'}>
 
-        <Grid container p={2}>
-          {/*Messege Grid  */} <Grid
-            item
-            xs={12}
-            sm={12}
-            md={6}
-            lg={3}
-            xl={3}
-            container
-            justifyContent="center"
-            alignItems="center"
-            flexDirection="column"
-          >
-            <img src={messegeIcon} width={'20%'} alt="" />
-            <Typography variant="h5">SMS Campaigns to Contact Lists</Typography>
-            <Grid item p={2}>
-              <Typography variant="p">You can send a simple SMS message to multiple contact groups at the same
-                time in one single campaign.</Typography></Grid>
-          </Grid>
-          <Grid
-            item
-            xs={12}
-            sm={12}
-            md={6}
-            lg={3}
-            xl={3}
-            container
-            justifyContent="center"
-            alignItems="center"
-            flexDirection="column"
-            p
-          >
-            <img src={missedCallIcon} width={'20%'} alt="" />
-            <Typography variant="h5">Missed Call lead generation</Typography>
-            <Grid item p={2}>
-              <Typography variant="p">You can send a simple SMS message to multiple contact groups at the same
-                time in one single campaign.</Typography>
-            </Grid>
+        <Card img={messegeIcon} title="SMS Campaigns to " title2="Contact Lists"
+          description="You can send a simple SMS message to multiple contact groups at the same
+        time in one single campaign."
+        />
 
+        <Card img={missedCallIcon}   title="Missed Call lead  " title2="generation"
+          description="You can send a simple SMS message to multiple contact groups at the same
+        time in one single campaign."
+        />
 
-          </Grid>
+<Card img={robotIcon} title="Bots with automated  "  title2=" interactivity"
+          description="You can send a simple SMS message to multiple contact groups at the same
+        time in one single campaign."
+        />
+        
+        <Card img={noteIcon} title="Criteria system for "  title2=" campaigns"
+          description="You can send a simple SMS message to multiple contact groups at the same
+        time in one single campaign."
+        />
 
-          <Grid
-            item
-            xs={12}
-            sm={12}
-            md={6}
-            lg={3}
-            xl={3}
-            container
-            justifyContent="center"
-            alignItems="center"
-            flexDirection="column"
-          >
-            <img src={robotIcon} width={'20%'} alt="" />
-            <Typography variant="h5">Bots with automated
-              interactivity</Typography>
-            <Grid item p={2}>
-              <Typography variant="p">You can send a simple SMS message to multiple contact groups at the same
-                time in one single campaign.</Typography></Grid>
-          </Grid>
+</Grid>
 
-          <Grid
-            item
-            xs={12}
-            sm={12}
-            md={6}
-            lg={3}
-            xl={3}
-            container
-            justifyContent="center"
-            alignItems="center"
-            flexDirection="column"
-          >
-            <img src={noteIcon} width={'20%'} alt="" />
-            <Typography variant="h5">Criteria system for campaigns</Typography>
-            <Grid item p={2}>
-              <Typography variant="p">You can send a simple SMS message to multiple contact groups at the same
-                time in one single campaign.</Typography></Grid>
-          </Grid>
-
-        </Grid>
         <Grid item p={2} display={'flex'} justifyContent={'center'} >
           <Link to="/features">
             <Button
               sx={{
                 mt: 2, // Add margin-top
-                fontSize: '1rem', // Increase font size
-                padding: '10px 20px',
+                fontSize: { xs: '1rem', xl: '1.5rem' },                padding: '10px 20px',
                 '&:hover': {
                   backgroundColor: '#0070C0', // Change background color on hover
                 }, // Increase padding
@@ -213,6 +146,8 @@ const Home = () => {
           <Typography variant='h2'>How you can use our tool ?</Typography>
         </Grid>
 
+
+
         <Grid
           item
           display="flex"
@@ -230,20 +165,18 @@ const Home = () => {
         </Grid>
 
 
-        <Grid container>
-
-        </Grid>
+        
       </section>
 
       {/* Section 4 */}
       <section style={{ background: 'var(--P1, rgba(0, 112, 192, 0.06))' }}>
-        <Grid item display={'flex'} justifyContent={'center'} mt={10} p={2}>
-          <Typography variant='h4' fontWeight={400}>Convenient and cost-effective plans are available for Anyone</Typography>
+        <Grid item display={'flex'} justifyContent={'center'} alignItems={'center'} textAlign={'center'} p={2}>
+          <Typography variant='h4'  sx={{ fontSize: { xs: '25px', sm: '25px', md: '30px', lg: '30px', xl: '30px' } }} fontWeight={400}>Convenient and cost-effective plans are available for Anyone</Typography>
         </Grid>
 
 
-        <Grid item display={'flex'} justifyContent={'center'} alignItems={'center'} mt={2} p={2}>
-          <Typography variant='h3' sx={{ fontSize: { xs: '20px', sm: '20px', md: '30px', lg: '30px', xl: '30px' } }}>Have An Unlimited Amount Of Team Members, Contacts And Text Messages</Typography>
+        <Grid item display={'flex'} justifyContent={'center'} alignItems={'center'} textAlign={'center'} mt={2} p={2}>
+          <Typography variant='h3' sx={{ fontSize: { xs: '30px', sm: '35px', md: '35px', lg: '35px', xl: '35px' } }}>Have An Unlimited Amount Of Team Members, Contacts And Text Messages</Typography>
         </Grid>
 
         <Grid item display={'flex'} justifyContent={'center'} alignItems={'center'} mt={20} p={2}>
@@ -281,22 +214,22 @@ const Home = () => {
         </Grid>
 
         <Grid container justify="space-between" alignItems="end" justifyContent={'end'} spacing={5}>
-  <Grid item>
-    <FacebookIcon style={{ color: 'white' }} />
-  </Grid>
-  <Grid item>
-    <YouTubeIcon style={{ color: 'white' }} />
-  </Grid>
-  <Grid item>
-    <InstagramIcon style={{ color: 'white' }} />
-  </Grid>
-</Grid>
+          <Grid item>
+            <FacebookIcon style={{ color: 'white' }} />
+          </Grid>
+          <Grid item>
+            <YouTubeIcon style={{ color: 'white' }} />
+          </Grid>
+          <Grid item>
+            <InstagramIcon style={{ color: 'white' }} />
+          </Grid>
+        </Grid>
 
 
 
       </section>
 
-    </>
+    </div>
   )
 }
 
