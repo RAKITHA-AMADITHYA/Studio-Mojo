@@ -4,6 +4,7 @@ import feature1 from '../assets/feature1.png'
 import feature2 from '../assets/feature2.png'
 import feature3 from '../assets/robot2.png'
 import feature4 from '../assets/feature4.png'
+import Footer from '../components/footer/Footer'
 
 
 
@@ -17,7 +18,7 @@ const Features = () => {
         <Typography variant='h6' sx={{ fontSize: { xs: '20px', sm: '20px', md: '20px', lg: '20px', xl: '30px' } }} >Discover Our Remarkable Features!</Typography>
       </Grid>
       
-      <Grid container p={2} spacing={10}   pl={{ xs: 2, sm: 2, md:10,lg:8,xl:20 }} 
+      <Grid item p={2} spacing={10}   pl={{ xs: 2, sm: 2, md:10,lg:8,xl:20 }} 
   pr={{ xs: 2, sm: 2,md:10,lg:8,xl:20 }}>
       {/* card 1 */}
       <Grid item >
@@ -35,7 +36,7 @@ const Features = () => {
       </Grid>
 
       {/* card 2 */}
-      <Grid item  >
+      <Grid item  mt={10} >
         <Box sx={{ borderRadius: 2, background: '#E5E5E5' }}>
           <Grid container p={4} spacing={2}>
           <Grid item xs={12} sm={12} md={5} lg={5} xl={5} 
@@ -70,7 +71,7 @@ const Features = () => {
 
 
       {/* card 3 */}
-      <Grid item  >
+      <Grid item   mt={10}>
         <Box sx={{ borderRadius: 2, background: '#CEE5F3' }}>
           <Grid container p={4}>
             <Grid item xs={12} sm={5} md={5} lg={5} xl={5} display={'flex'} justifyContent={'center'}>
@@ -85,7 +86,7 @@ const Features = () => {
       </Grid>
 
       {/* card 4 */}
-      <Grid item  >
+      <Grid item   mt={10} >
         <Box sx={{ borderRadius: 2, background: '#E5E5E5' }}>
           <Grid container p={4} spacing={2}>
           <Grid item xs={12} sm={12} md={5} lg={5} xl={5} 
@@ -116,7 +117,11 @@ const Features = () => {
 
         </Box>
       </Grid>
+      
+
+
 </Grid>
+<Footer/>
 
     </>
   )
