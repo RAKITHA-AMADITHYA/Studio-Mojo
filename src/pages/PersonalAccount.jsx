@@ -29,39 +29,87 @@ const PersonalAccount = () => {
                 <Grid container spacing={2} rowGap={2}>
                     {/* First Name field */}
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={4} flexDirection={'column'}>
-                        <TextField id="outlined-basic" label="First Name" variant="outlined" fullWidth />
+                        <TextField
+                            id="outlined-basic"
+                            label="First Name"
+                            variant="outlined"
+                            fullWidth
+                            InputProps={{
+                                sx: {
+                                    '& .MuiOutlinedInput-notchedOutline': {
+                                        borderColor: '#9e9e9e',
+                                    },
+                                },
+                            }}
+                        />
                     </Grid>
 
                     {/* Last Name field */}
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={4} flexDirection={'column'}>
-                        <TextField id="outlined-basic" label="Last Name" variant="outlined" fullWidth />
+                        <TextField id="outlined-basic" label="Last Name" variant="outlined" fullWidth InputProps={{
+                            sx: {
+                                '& .MuiOutlinedInput-notchedOutline': {
+                                    borderColor: '#9e9e9e',
+                                },
+                            },
+                        }} />
                     </Grid>
 
 
                     {/* Email field */}
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={4} flexDirection={'column'}>
-                        <TextField id="outlined-basic" label="Email" variant="outlined" fullWidth />
+                        <TextField id="outlined-basic" label="Email" variant="outlined" fullWidth InputProps={{
+                            sx: {
+                                '& .MuiOutlinedInput-notchedOutline': {
+                                    borderColor: '#9e9e9e',
+                                },
+                            },
+                        }} />
                     </Grid>
 
                     {/* Contact field */}
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={4} flexDirection={'column'}>
-                        <TextField id="outlined-basic" label="Contact" variant="outlined" fullWidth />
+                        <TextField id="outlined-basic" label="Contact" variant="outlined" fullWidth InputProps={{
+                            sx: {
+                                '& .MuiOutlinedInput-notchedOutline': {
+                                    borderColor: '#9e9e9e',
+                                },
+                            },
+                        }} />
                     </Grid>
 
                     {/* NIC field */}
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={4} flexDirection={'column'}>
-                        <TextField id="outlined-basic" label="NIC" variant="outlined" fullWidth />
+                        <TextField id="outlined-basic" label="NIC" variant="outlined" fullWidth InputProps={{
+                            sx: {
+                                '& .MuiOutlinedInput-notchedOutline': {
+                                    borderColor: '#9e9e9e',
+                                },
+                            },
+                        }} />
                     </Grid>
 
 
                     {/* Password field */}
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={4} flexDirection={'column'}>
-                        <TextField id="outlined-basic" label="Password" variant="outlined" fullWidth disabled />
+                        <TextField id="outlined-basic" label="Password" variant="outlined" fullWidth InputProps={{
+                            sx: {
+                                '& .MuiOutlinedInput-notchedOutline': {
+                                    borderColor: '#9e9e9e',
+                                },
+                            },
+                        }} />
                     </Grid>
 
                     {/* Confirm Password field */}
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={4} flexDirection={'column'}>
-                        <TextField id="outlined-basic" label="Confirm Password" variant="outlined" fullWidth />
+                        <TextField id="outlined-basic" label="Confirm Password" variant="outlined" fullWidth InputProps={{
+                            sx: {
+                                '& .MuiOutlinedInput-notchedOutline': {
+                                    borderColor: '#9e9e9e',
+                                },
+                            },
+                        }} />
                     </Grid>
 
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12} flexDirection={'column'} >
@@ -77,7 +125,7 @@ const PersonalAccount = () => {
                             variant="outlined"
                             tabIndex={-1}
                             startIcon={<CloudUploadIcon />}
-                            
+
                         >
                             Upload file
                             <VisuallyHiddenInput type="file" />
@@ -97,21 +145,21 @@ const PersonalAccount = () => {
 
                     {/* Create Account Button */}
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={4} flexDirection={'column'} mt={2} display={'flex'} justifyContent={'center'} alignItems={'center'}>
-  <Button
-    variant="contained"
-    disableElevation
-    sx={{
-      '&:hover': {
-        backgroundColor: '#1976d2', // Primary color
-      },
-      width: '50%', // Set width to fit the content
-    }}
-  >
-    Create Account
-  </Button>
-</Grid>
+                        <Button
+                            variant="contained"
+                            disableElevation
+                            sx={{
+                                '&:hover': {
+                                    backgroundColor: '#1976d2', // Primary color
+                                },
+                                width: '50%', // Set width to fit the content
+                            }}
+                        >
+                            Create Account
+                        </Button>
+                    </Grid>
 
-                    <Grid item xs={12} sm={12} md={12} lg={12} xl={4} flexDirection={'column'}  display={'flex'} justifyContent={'center'} alignItems={'center'}>
+                    <Grid item xs={12} sm={12} md={12} lg={12} xl={4} flexDirection={'column'} display={'flex'} justifyContent={'center'} alignItems={'center'}>
 
                         {/* Register Link */}
                         <Typography variant="subtitle1" color="primary" >
