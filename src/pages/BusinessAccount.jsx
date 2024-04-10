@@ -28,39 +28,74 @@ const BusinessAccount = () => {
                 <Grid container spacing={2} rowGap={2}>
                     {/* First Name field */}
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={4} flexDirection={'column'}>
-                        <TextField id="outlined-basic" label="First Name" variant="outlined" fullWidth />
+                        <TextField id="outlined-basic" label="First Name" variant="outlined" fullWidth InputProps={{
+        sx: {
+          '& .MuiOutlinedInput-notchedOutline': {
+            borderColor: '#9e9e9e',          },
+        },
+      }} />
                     </Grid>
 
                     {/* Last Name field */}
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={4} flexDirection={'column'}>
-                        <TextField id="outlined-basic" label="Last Name" variant="outlined" fullWidth />
+                        <TextField id="outlined-basic" label="Last Name" variant="outlined" fullWidth InputProps={{
+        sx: {
+          '& .MuiOutlinedInput-notchedOutline': {
+            borderColor: '#9e9e9e',          },
+        },
+      }} />
                     </Grid>
 
 
                     {/* Email field */}
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={4} flexDirection={'column'}>
-                        <TextField id="outlined-basic" label="Email" variant="outlined" fullWidth />
+                        <TextField id="outlined-basic" label="Email" variant="outlined" fullWidth InputProps={{
+        sx: {
+          '& .MuiOutlinedInput-notchedOutline': {
+            borderColor: '#9e9e9e',          },
+        },
+      }}/>
                     </Grid>
 
                     {/* Contact field */}
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={4} flexDirection={'column'}>
-                        <TextField id="outlined-basic" label="Contact" variant="outlined" fullWidth />
+                        <TextField id="outlined-basic" label="Contact" variant="outlined" fullWidth InputProps={{
+        sx: {
+          '& .MuiOutlinedInput-notchedOutline': {
+            borderColor: '#9e9e9e',          },
+        },
+      }}/>
                     </Grid>
 
                     {/* BRD Code field */}
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={4} flexDirection={'column'}>
-                        <TextField id="outlined-basic" label="BRD Code" variant="outlined" fullWidth />
+                        <TextField id="outlined-basic" label="BRD Code" variant="outlined" fullWidth InputProps={{
+        sx: {
+          '& .MuiOutlinedInput-notchedOutline': {
+            borderColor: '#9e9e9e',          },
+        },
+      }}/>
                     </Grid>
 
 
                     {/* Password field */}
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={4} flexDirection={'column'}>
-                        <TextField id="outlined-basic" label="Password" variant="outlined" fullWidth disabled />
+                        <TextField id="outlined-basic" label="Password" variant="outlined" fullWidth  InputProps={{
+        sx: {
+          '& .MuiOutlinedInput-notchedOutline': {
+            borderColor: '#9e9e9e',          },
+        },
+      }} />
                     </Grid>
 
                     {/* Confirm Password field */}
                     <Grid item xs={12} sm={12} md={6} lg={6} xl={4} flexDirection={'column'}>
-                        <TextField id="outlined-basic" label="Confirm Password" variant="outlined" fullWidth />
+                        <TextField id="outlined-basic" label="Confirm Password" variant="outlined" fullWidth InputProps={{
+        sx: {
+          '& .MuiOutlinedInput-notchedOutline': {
+            borderColor: '#9e9e9e',          },
+        },
+      }} />
                     </Grid>
 
                     <Grid item xs={12} sm={12} md={12} lg={12} xl={12} flexDirection={'column'} >
