@@ -12,7 +12,7 @@ const Signup = () => {
         <div style={{ display: 'flex', justifyContent: 'center', alignContent: 'center' }}>
             <Box sx={{
                 borderRadius: 3,
-                backgroundColor: '#f5f5f5',
+                backgroundColor: '#bdbdbd                ',
                 mt: 10,
                 p: 1
             }}>
