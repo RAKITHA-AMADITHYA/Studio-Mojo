@@ -11,6 +11,10 @@ function Header() {
     setOpen(!open);
   };
 
+  const handleLinkClick = () => {
+    setOpen(false); // Close the sidebar when a link is clicked
+  };
+
   return (
     <Box
       sx={{
@@ -20,7 +24,6 @@ function Header() {
       <Grid container p={1}>
         {/* Logo */}
         <Grid item xs={11} sm={11} md={2} lg={2} xl={2} display={'flex'} justifyContent={'start'} alignItems={'center'}>
-
           <Link to="/">
             <img src={Logo} width={'200px'} alt="" />
           </Link>
@@ -35,11 +38,10 @@ function Header() {
             onClose={handleToggle}
           >
             <Box sx={{ p: 2, width: 200 }}>
-
               <Grid item>
                 <img src={Logo} alt="" />
               </Grid>
-              <Grid item display={'flex'} justifyContent={'cente'} alignItems={'center'} mt={10}>
+              <Grid item display={'flex'} justifyContent={'center'} alignItems={'center'} mt={10}>
                 <Typography
                   variant='h6'
                   fontWeight={600}
@@ -56,12 +58,13 @@ function Header() {
                     display: 'block',
                     width: '100%',
                   }}
+                  onClick={handleLinkClick}
                 >
                   Features
                 </Typography>
               </Grid>
 
-              <Grid item display={'flex'} justifyContent={'cente'} alignItems={'center'} mt={1}>
+              <Grid item display={'flex'} justifyContent={'center'} alignItems={'center'} mt={1}>
                 <Typography
                   variant='h6'
                   fontWeight={600}
@@ -78,13 +81,13 @@ function Header() {
                     display: 'block',
                     width: '100%',
                   }}
+                  onClick={handleLinkClick}
                 >
                   Pricing
                 </Typography>
               </Grid>
 
-
-              <Grid item display={'flex'} justifyContent={'cente'} alignItems={'center'} mt={1}>
+              <Grid item display={'flex'} justifyContent={'center'} alignItems={'center'} mt={1}>
                 <Typography
                   variant='h6'
                   fontWeight={600}
@@ -101,12 +104,13 @@ function Header() {
                     display: 'block',
                     width: '100%',
                   }}
+                  onClick={handleLinkClick}
                 >
                   Resources
                 </Typography>
               </Grid>
 
-              <Grid item display={'flex'} justifyContent={'cente'} alignItems={'center'} mt={1}>
+              <Grid item display={'flex'} justifyContent={'center'} alignItems={'center'} mt={1}>
                 <Typography
                   variant='h6'
                   fontWeight={600}
@@ -123,12 +127,13 @@ function Header() {
                     display: 'block',
                     width: '100%',
                   }}
+                  onClick={handleLinkClick}
                 >
                   About Us
                 </Typography>
               </Grid>
 
-              <Grid item display={'flex'} justifyContent={'cente'} alignItems={'center'} mt={40}>
+              <Grid item display={'flex'} justifyContent={'center'} alignItems={'center'} mt={40}>
                 <Button
                   component={Link}
                   to="/login"
@@ -137,6 +142,7 @@ function Header() {
                     color: 'inherit',
                     bgcolor: '#0070C0'
                   }}
+                  onClick={handleLinkClick}
                 >
                   Login
                 </Button>
@@ -163,6 +169,7 @@ function Header() {
                 },
                 textDecoration: 'none', // Remove text decoration
               }}
+              onClick={handleLinkClick}
             >
               Features
             </Typography>
@@ -180,6 +187,7 @@ function Header() {
                 },
                 textDecoration: 'none', // Remove text decoration
               }}
+              onClick={handleLinkClick}
             >
               Pricing
             </Typography>
@@ -197,6 +205,7 @@ function Header() {
                 },
                 textDecoration: 'none', // Remove text decoration
               }}
+              onClick={handleLinkClick}
             >
               Resources
             </Typography>
@@ -214,6 +223,7 @@ function Header() {
                 },
                 textDecoration: 'none', // Remove text decoration
               }}
+              onClick={handleLinkClick}
             >
               About Us
             </Typography>
@@ -233,7 +243,9 @@ function Header() {
                   backgroundColor: '#0070C0', // Change background color on hover
                 },
               }}
-            >Signup</Button>
+            >
+              Signup
+            </Button>
           </Stack>
         </Grid>
       </Grid>
