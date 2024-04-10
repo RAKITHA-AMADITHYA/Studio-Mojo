@@ -36,7 +36,7 @@ const Features = () => {
 
       {/* card 2 */}
       <Grid item  >
-        <Box sx={{ borderRadius: 2, background: '#CEE5F3' }}>
+        <Box sx={{ borderRadius: 2, background: '#E5E5E5' }}>
           <Grid container p={4} spacing={2}>
           <Grid item xs={12} sm={12} md={5} lg={5} xl={5} 
               display={{ xs: 'flex', sm: 'none', md: 'none' }}
@@ -46,7 +46,7 @@ const Features = () => {
               >
                 <img src={feature2} style={{ width: '45%', maxWidth: '100%' }} alt="" />
             </Grid>
-            
+
             <Grid item xs={12} sm={7} md={7} lg={7} xl={7}>
               <Typography variant='h4' sx={{ fontSize: { xs: '18px', sm: '20px', md: '35px', lg: '35px', xl: '40px' }, }}>Missed call lead generation</Typography>
               <Typography variant='subtitle1' sx={{ mt: 2, fontSize: { xs: '12px', sm: '12px', md: '15px', lg: '15px', xl: '30px' }, }}>With our messaging platform, you have the capability to efficiently send a single SMS message to multiple contact groups simultaneously, all within a single campaign. This means that whether
@@ -86,7 +86,7 @@ const Features = () => {
 
       {/* card 4 */}
       <Grid item  >
-        <Box sx={{ borderRadius: 2, background: '#CEE5F3' }}>
+        <Box sx={{ borderRadius: 2, background: '#E5E5E5' }}>
           <Grid container p={4} spacing={2}>
           <Grid item xs={12} sm={12} md={5} lg={5} xl={5} 
               display={{ xs: 'flex', sm: 'none', md: 'none' }}
