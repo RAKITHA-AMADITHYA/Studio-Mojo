@@ -14,6 +14,8 @@ const Login = lazy(() => import("./pages/Login"));
 const Signup = lazy(() => import("./pages/Signup"));
 const PersonalAccount = lazy(() => import("./pages/PersonalAccount"));
 const BusinessAccount = lazy(() => import("./pages/BusinessAccount"));
+const Error1 = lazy(() => import("./components/error/Error1"));
+
 
 
 
@@ -42,6 +44,7 @@ function App() {
           }
         >
           <Routes>
+              <Route path="/*" element={<Error1 />} />
             <Route element={<Layout />}>
               <Route path="/" element={<Home />} />
               <Route path="features" element={<Features />} />
@@ -52,6 +55,7 @@ function App() {
               <Route path="signup" element={<Signup />} />
               <Route path="signup/personal-account" element={<PersonalAccount />} />
               <Route path="signup/business-account" element={<BusinessAccount />} />
+
 
 
 
