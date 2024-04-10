@@ -2,6 +2,7 @@ import { Box, Grid, Table, TableBody, TableCell, TableContainer, TableHead, Tabl
 import React from 'react';
 import pricing1 from '../assets/pricing1.png';
 import pricing2 from '../assets/pricing2.png';
+import Footer from '../components/footer/Footer';
 
 const Pricing = () => {
   return (
@@ -13,7 +14,7 @@ const Pricing = () => {
       </Grid>
 
       {/* card 2 */}
-      <Grid container p={2} spacing={10}   pl={{ xs: 2, sm: 2, md:10,lg:8,xl:20 }} 
+      <Grid item p={2} spacing={10}   pl={{ xs: 2, sm: 2, md:10,lg:8,xl:20 }} 
   pr={{ xs: 2, sm: 2,md:10,lg:8,xl:20 }}>
 
 
@@ -121,6 +122,8 @@ const Pricing = () => {
         </Box>
       </Grid>
       </Grid>
+
+      <Footer/>
     </>
   );
 };
