@@ -11,7 +11,7 @@ const Login = () => {
             <Grid container>
                 <Grid item xs={12} sm={12} md={7} lg={7} xl={7} sx={{ backgroundImage: `url(${loginimg})`, backgroundSize: 'cover', backgroundPosition: 'center', height: 'auto', flexDirection: 'column' }}>
                     <Grid item p={2} lg={5}>
-                        <Typography variant='h1' color={'white'} fontWeight={600}>Welcome Back</Typography>
+                        <Typography variant='h1' color={'white'} fontWeight={600} sx={{ fontSize: { xs: '30px', sm: '40px', md: '40px', lg: '50px', xl: '80px' }, }}>Welcome Back</Typography>
                     </Grid>
                     <Grid item p={2}>
                         <Typography variant='h4' color={'white'} fontWeight={400}>Your journey continues</Typography>
