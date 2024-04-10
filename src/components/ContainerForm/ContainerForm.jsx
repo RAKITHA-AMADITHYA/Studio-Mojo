@@ -8,7 +8,7 @@ const ContainerForm = (props) => {
     sx={{
       backgroundColor: '#f5f5f5',
       borderRadius: 2,
-      boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
+      boxshadow: '2px 2px 2px 1px rgba(0, 0, 0, 0.2)',
       display: 'flex',
       flexDirection: 'column',
       width: '100%', // Full width on xs and sm screens
