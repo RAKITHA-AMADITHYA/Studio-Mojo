@@ -2,6 +2,7 @@ import React, { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { BarLoader } from "react-spinners";
 import ThemeProvider from "./theme";
+import CircularProgress from '@mui/material/CircularProgress';
 
 
 const Home = lazy(() => import("./pages/Home"));
@@ -36,13 +37,13 @@ function App() {
     <ThemeProvider>
 
       <Router>
-        <Suspense
-          fallback={
-            <div style={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center" }}>
-              <BarLoader color={"#0070C0"} loading={true} width={"100%"} />
-            </div>
-          }
-        >
+      <Suspense
+  fallback={
+    <div style={{ width: "100%", display: "flex", justifyContent: "center", alignItems: "center", height: "100vh" }}>
+      <CircularProgress color="primary" />
+    </div>
+  }
+>
           <Routes>
               <Route path="/*" element={<Error1 />} />
             <Route element={<Layout />}>
