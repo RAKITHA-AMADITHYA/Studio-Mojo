@@ -18,7 +18,7 @@ const Card = (props) => {
             <img src={props.img} width={'auto'} alt="" />
             <Typography variant="h5" sx={{ fontSize: { xs: '25px', sm: '25px', md: '20px', lg: '22px', xl: '28px' },mt:2 }} fontWeight={600}>{props.title}<br/>{props.title2}</Typography>
             <Grid item p={2}>
-              <Typography variant="subtitle1" sx={{ fontSize: { xs: '18px', sm: '18px', md: '18px', lg: '18px', xl: '25px' } }}>
+              <Typography variant="subtitle1" >
                 {props.description}
                 
                </Typography>
