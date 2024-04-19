@@ -487,7 +487,7 @@ function Header() {
 
 
 
-            {/* Modal content */}
+            {/* Personal account Modal content */}
             <Grid container spacing={1} rowGap={1} mt={1}>
 
               {/*  First Name  field */}
@@ -766,10 +766,294 @@ function Header() {
             </Grid>
 
 
+             {/* Personal account Modal content */}
+            <Grid container spacing={1} rowGap={1} mt={1}>
+
+              {/*  First Name  field */}
+              <Grid item xs={12} sm={12} md={6} lg={3} xl={3} flexDirection={'column'} display={'flex'} justifyContent={'center'} alignItems={'start'}>
+
+                <Typography variant='subtitle2'
+                  sx={{ fontSize: { xs: '13px', sm: '13px', md: '13px', lg: '13px', xl: '15px' } }} fontWeight={600}>
+                  First Name  <span style={{ color: '#0070C0' }}>*</span></Typography>
+                <TextField
+                  id="outlined-basic"
+                  // label="Tp Number"
+                  variant="outlined"
+                  fullWidth
+                  sx={{
+                    '& .MuiOutlinedInput-root': {
+                      height: '50px', // Set the desired height
+                    },
+                    '& .MuiOutlinedInput-notchedOutline': {
+                    //   borderColor: '#9e9e9e',
+                    },
+                  }}
+                />
+              </Grid>
+
+              {/*  Last Name  field */}
+              <Grid item xs={12} sm={12} md={6} lg={3} xl={3} flexDirection={'column'} display={'flex'} justifyContent={'center'} alignItems={'start'}>
+
+                <Typography variant='subtitle2'
+                  sx={{ fontSize: { xs: '13px', sm: '13px', md: '13px', lg: '13px', xl: '15px' } }} fontWeight={600}>
+                  Last Name  <span style={{ color: '#0070C0' }}>*</span></Typography>
+                <TextField
+                  id="outlined-basic"
+                  // label="Tp Number"
+                  variant="outlined"
+                  fullWidth
+                  sx={{
+                    '& .MuiOutlinedInput-root': {
+                      height: '50px', // Set the desired height
+                    },
+                    '& .MuiOutlinedInput-notchedOutline': {
+                      borderColor: '#9e9e9e',
+                    },
+                  }}
+                />
+              </Grid>
+
+              {/* Mobile Number field */}
+              <Grid item xs={12} sm={12} md={6} lg={3} xl={3} flexDirection={'column'} display={'flex'} justifyContent={'center'} alignItems={'start'}>
+
+                <Typography variant='subtitle2' sx={{ fontSize: { xs: '13px', sm: '13px', md: '13px', lg: '13px', xl: '15px' } }} fontWeight={600}>
+                  Mobile Number <span style={{ color: '#0070C0' }}>*</span></Typography>
+                <TextField
+                  id="outlined-basic"
+                  // label="Tp Number"
+                  variant="outlined"
+                  fullWidth
+                  sx={{
+                    '& .MuiOutlinedInput-root': {
+                      height: '50px', // Set the desired height
+                    },
+                    '& .MuiOutlinedInput-notchedOutline': {
+                      borderColor: '#9e9e9e',
+                    },
+                  }}
+                />
+              </Grid>
+
+
+              {/* Email  field */}
+              <Grid item xs={12} sm={12} md={6} lg={3} xl={3} flexDirection={'column'} display={'flex'} justifyContent={'center'} alignItems={'start'}>
+
+                <Typography variant='subtitle2' sx={{ fontSize: { xs: '13px', sm: '13px', md: '13px', lg: '13px', xl: '15px' } }} fontWeight={600}>
+                  Email  <span style={{ color: '#0070C0' }}>*</span></Typography>
+                <TextField
+                  id="outlined-basic"
+                  // label="Tp Number"
+                  variant="outlined"
+                  fullWidth
+                  sx={{
+                    '& .MuiOutlinedInput-root': {
+                      height: '50px', // Set the desired height
+                    },
+                    '& .MuiOutlinedInput-notchedOutline': {
+                      borderColor: '#9e9e9e',
+                    },
+                  }}
+                />
+              </Grid>
+
+
+
+
+              {/*  Nature of the Business  field */}
+              <Grid item xs={12} sm={12} md={6} lg={3} xl={3} flexDirection={'column'} display={'flex'} justifyContent={'center'} alignItems={'start'}>
+                <Typography variant='subtitle2' sx={{ fontSize: { xs: '13px', sm: '13px', md: '13px', lg: '13px', xl: '15px' } }} fontWeight={600}>
+                  Nature of the business  <span style={{ color: '#0070C0' }}>*</span>
+                </Typography>
+                <Select
+                  id="nature-of-business"
+                  variant="outlined"
+                  fullWidth
+                  sx={{
+                    '& .MuiOutlinedInput-root': {
+                      height: '50px', // Set the desired height
+                    },
+                    '& .MuiOutlinedInput-notchedOutline': {
+                      borderColor: '#9e9e9e',
+                    },
+                  }}
+                >
+                  {/* Placeholder for the first item */}
+                  <MenuItem value="">
+                    <em>Select Nature of Business</em>
+                  </MenuItem>
+                  {/* List of legal businesses */}
+                  <MenuItem value="Business 1">Business 1</MenuItem>
+                  <MenuItem value="Business 2">Business 2</MenuItem>
+                  {/* Add more MenuItem components for each legal business */}
+                </Select>
+              </Grid>
+
+
+              {/*  NIC  field */}
+              <Grid item xs={12} sm={12} md={6} lg={3} xl={3} flexDirection={'column'} display={'flex'} justifyContent={'center'} alignItems={'start'}>
+
+                <Typography variant='subtitle2'
+                  sx={{ fontSize: { xs: '13px', sm: '13px', md: '13px', lg: '13px', xl: '15px' } }} fontWeight={600}>
+                  NIC  <span style={{ color: '#0070C0' }}>*</span></Typography>
+                <TextField
+                  id="outlined-basic"
+                  // label="Tp Number"
+                  variant="outlined"
+                  fullWidth
+                  sx={{
+                    '& .MuiOutlinedInput-root': {
+                      height: '50px', // Set the desired height
+                    },
+                    '& .MuiOutlinedInput-notchedOutline': {
+                      // borderColor: '#9e9e9e',
+                    },
+                  }}
+                />
+              </Grid>
+
+
+
+              {/*  Address  field */}
+              <Grid item xs={12} sm={12} md={6} lg={3} xl={3} flexDirection={'column'} >
+
+                <Typography variant='subtitle2'
+                  sx={{ fontSize: { xs: '13px', sm: '13px', md: '13px', lg: '13px', xl: '15px' } }} fontWeight={600}>
+                  Address  <span style={{ color: '#0070C0' }}>*</span></Typography>
+                <TextField
+                  id="outlined-basic"
+                  // label="Tp Number"
+                  variant="outlined"
+                  fullWidth
+                  sx={{
+                    '& .MuiOutlinedInput-root': {
+                      width: 'auto', // Set the desired width
+                      height: '50px', // Set the desired height
+                    },
+                    '& .MuiOutlinedInput-notchedOutline': {
+                      borderColor: '#9e9e9e',
+                    },
+                  }}
+                />
+              </Grid>
+
+              {/*  Gender  field */}
+              <Grid item xs={12} sm={12} md={6} lg={3} xl={3} flexDirection={'column'} >
+
+                <Typography variant='subtitle2'
+                  sx={{ fontSize: { xs: '13px', sm: '13px', md: '13px', lg: '13px', xl: '15px' } }} fontWeight={600}>
+                  Gender  <span style={{ color: '#0070C0' }}>*</span></Typography>
+                <TextField
+                  id="outlined-basic"
+                  // label="Tp Number"
+                  variant="outlined"
+                  fullWidth
+                  sx={{
+                    '& .MuiOutlinedInput-root': {
+                      width: 'auto', // Set the desired width
+                      height: '50px', // Set the desired height
+                    },
+                    '& .MuiOutlinedInput-notchedOutline': {
+                      borderColor: '#9e9e9e',
+                    },
+                  }}
+                />
+              </Grid>
+
+              {/*  Comments  field */}
+              <Grid item xs={12} sm={12} md={6} lg={8} xl={8} flexDirection={'column'} display={'flex'} justifyContent={'center'} alignItems={'start'}>
+
+                <Typography variant='subtitle2'
+                  sx={{ fontSize: { xs: '13px', sm: '13px', md: '13px', lg: '13px', xl: '15px' } }} fontWeight={600}>
+                  Comments  </Typography>
+                <TextField
+                  id="outlined-basic"
+                  // label="Tp Number"
+                  variant="outlined"
+                  fullWidth
+                  sx={{
+                    '& .MuiOutlinedInput-root': {
+                      // width: 'auto', // Set the desired width
+                      height: '150px', // Set the desired height
+                    },
+                    '& .MuiOutlinedInput-notchedOutline': {
+                      borderColor: '#9e9e9e',
+                    },
+                  }}
+                />
+              </Grid>
+
+
+              {/*  Upload NIC or DL Copy:  field */}
+              <Grid item xs={12} sm={12} md={6} lg={4} xl={4} flexDirection={'column'} display={'flex'} justifyContent={'start'} alignItems={'start'} >
+
+                <Typography variant='subtitle2'
+                  sx={{ fontSize: { xs: '13px', sm: '13px', md: '13px', lg: '13px', xl: '15px' } }} fontWeight={600}>
+                  Upload NIC or DL Copy:  </Typography>
+                <TextField
+                  id="outlined-basic"
+                  // label="Tp Number"
+                  variant="outlined"
+                  fullWidth
+                  sx={{
+                    '& .MuiOutlinedInput-root': {
+                      height: '100px', // Set the desired height
+                    },
+                    '& .MuiOutlinedInput-notchedOutline': {
+                      borderColor: '#9e9e9e',
+                    },
+                  }}
+                />
+
+                <Button
+                  component="label"
+                  role={undefined}
+                  variant="outlined"
+                  tabIndex={-1}
+                  startIcon={<CloudUploadIcon />}
+                  sx={{ mt: 2 }}
+                  fullWidth
+
+                >
+                  Upload file
+                  <VisuallyHiddenInput type="file" />
+                </Button>
+              </Grid>
+              {/* Terms & Conditions Checkbox */}
+              <Grid item xs={12} sm={12} md={12} lg={12} xl={12} flexDirection={'column'} >
+                <FormControlLabel
+                  control={<Checkbox />}
+                  label="I have read and agree to Terms & Conditions"
+                />
+              </Grid>
+
+              {/* Submit btn */}
+              <Grid item xs={12} sm={12} md={12} lg={12} xl={12} flexDirection={'column'} mt={2} display={'flex'} justifyContent={'end'} alignItems={'end'}>
+                <Button
+                  variant="contained"
+                  disableElevation
+                  sx={{
+                    '&:hover': {
+                      backgroundColor: '#1976d2', // Primary color
+                    },
+                  }}
+                >
+                  Create Account
+                </Button>
+              </Grid>
+
+
+            </Grid>
+
+
+
+
 
           </Box>
         </Fade>
       </Modal>
+
+
+      
 
     </Box>
   );
