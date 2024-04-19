@@ -1,17 +1,10 @@
-import { Box, Button, Divider, Grid, Fade, IconButton, Typography, useMediaQuery } from '@mui/material'
-import anime from '../assets/anime1.png'
+import {  Button,  Grid, Fade,  Typography, useMediaQuery } from '@mui/material'
+import anime from '../assets/Frame 406.png'
 import messegeIcon from '../assets/messege.png'
 import missedCallIcon from '../assets/missedcall.png'
 import robotIcon from '../assets/robot.png'
 import noteIcon from '../assets/note.png'
-import FacebookIcon from '@mui/icons-material/Facebook';
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import { motion } from "framer-motion"
 import Feature from '../assets/feature.gif'
-import logo from '../assets/logo.png'
-import { useGSAP } from '@gsap/react'
-import gsap from "gsap";
 import { Link } from 'react-router-dom'
 import Card from '../components/ContentCard/Card'
 import Footer from '../components/footer/Footer'
