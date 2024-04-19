@@ -1,5 +1,5 @@
 import {  Button,  Grid, Fade,  Typography, useMediaQuery } from '@mui/material'
-import anime from '../assets/Frame 406.png'
+import anime from '../assets/anime1.png'
 import messegeIcon from '../assets/messege.png'
 import missedCallIcon from '../assets/missedcall.png'
 import robotIcon from '../assets/robot.png'
@@ -33,11 +33,11 @@ const Home = () => {
           </Fade>
         </Grid>
 
-        <Grid container mt={-2} spacing={2} p={1}>
+        <Grid container mt={-8} spacing={2} p={1}>
           <Grid item xs={12} sm={12} md={6} lg={6} xl={6} display={'flex'} justifyContent={'center'} >
             {/* <motion.div animate={{}}> */}
 
-            <img src={anime} width={'75%'} alt="" />
+            <img src={anime} width={'85%'} alt="" />
             {/* </motion.div> */}
           </Grid>
           <Grid item xs={12} sm={12} md={6} lg={6} xl={6} display={'flex'} justifyContent={'center'} alignItems={'start'} flexDirection={'column'} p={2} >
@@ -64,7 +64,7 @@ const Home = () => {
               </Fade>
             </Grid>
 
-            <Link to="/signup">
+            <Link to="/features">
               <Fade in timeout={4000}>
                 <Button
                   sx={{
@@ -75,7 +75,7 @@ const Home = () => {
                   variant="outlined"
                   href="#outlined-buttons"
                 >
-                  Get Started
+                  Features
                 </Button>
               </Fade>
             </Link>
@@ -114,7 +114,7 @@ const Home = () => {
         </Grid>
 
         <Grid item p={2} display={'flex'} justifyContent={'center'} >
-          <Link to="/features">
+          <Link to="/resources">
             <Button
               sx={{
                 mt: 2, // Add margin-top
